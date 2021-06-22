@@ -1,0 +1,5 @@
+{
+  "LocalHost": "http://192.168.1.65:5001/chatHub",
+  "RemoteHost": "https://chathubapp220210609225557.azurewebsites.net/chatHub",
+  "IsUsingLocalHost": false
+}
