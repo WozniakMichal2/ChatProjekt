@@ -58,11 +58,11 @@ namespace ChatApp.Friends
 
         private string convertPhoneNumberToCorrectFormat(string unformattedPhoneNum)
         {
-            string formattedPhoneNumber = string.Concat(unformattedPhoneNum.Where(char.IsDigit)); //remove the non numbers from the phone number so instead of 1-415-676-3432, you have 14156763432
+            string formattedPhoneNumber = string.Concat(unformattedPhoneNum.Where(char.IsDigit)); 
             int numOfDigits = formattedPhoneNumber.Length;
             if(numOfDigits > 9)
             {
-                formattedPhoneNumber = formattedPhoneNumber.Substring(1, numOfDigits - 1); //remove the first digit so instead of 14153456789 you have 4153456789
+                formattedPhoneNumber = formattedPhoneNumber.Substring(1, numOfDigits - 1); 
             }
             return formattedPhoneNumber;
         }
